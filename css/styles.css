@@ -1,0 +1,91 @@
+/*Color pallette: https://coolors.co/6290c3-004ba8-067bc2-0a369d-cfdee7*/
+
+/*Begin header styles*/
+
+.header-box {
+  background-color: #004ba8;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.htop {
+  height: 132px;
+  align-items: flex-end;
+}
+
+.hmid {
+  height: 50px;
+  align-items: center;
+}
+
+.hbtm {
+  height: 100px;
+  align-items: flex-start;
+}
+
+.header-box h1 {
+  font-size: 48px;
+  margin-top: 86px;
+}
+
+/*End header styles*/
+
+/*Begin Navbar styles*/
+
+.navbar-default {
+  border-color: #d6e9ff;
+  position: sticky;
+  top: 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav-container {
+  background-color: #004ba8;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  background-color: #d6e9ff;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: #d6e9ff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #d6e9ff;
+  transition: 0.3s all;
+}
+
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: #d6e9ff;
+}
+
+.dropdown-menu {
+  background-color: #d6e9ff;
+}
+
+.nav-button:hover {
+  background-color: #d6e9ff;
+}
+
+
+.navbar-default {
+  color: #fff;
+}
+
+/*End Navbar styles*/
+
+.body-test {
+  height: 1200px;
+  width: 100%;
+}
+
+/*Media Queries*/
