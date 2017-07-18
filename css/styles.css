@@ -109,9 +109,35 @@ d6e9ff - lighter shade */
 
 /*End Navbar styles*/
 
-/* Trying a fix for elements in a row overriding sticky by creating a second empty sticky as a buffer */
+/* Begin Jumbotron Styles */
 
+.jumbo-head {
+  font-family: "Permanent Marker", cursive;
+  font-size: 32px;
+}
 
+/* End Jumbotron Styles */
+
+/* Begin Carousel Styles */
+
+.caro-frame {
+  background-color: #004ba8;
+  padding: 5px 40px 40px 40px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+.caro-img {
+  border: 5px solid #000;
+}
+
+.carousel-caption p {
+  color: #fff;
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+}
 
 /*Begin Thumbnail Styles */
 
