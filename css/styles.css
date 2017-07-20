@@ -1,6 +1,12 @@
 /*Color pallette: 004ba8 - Deep blue
 d6e9ff - lighter shade */
 
+/* Begin Global Style */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 /*Begin header styles*/
 
 .header-box {
@@ -48,8 +54,17 @@ d6e9ff - lighter shade */
   padding-top: 52px;
 }
 
+.navbar-default .navbar-brand {
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+  font-size: 24px;
+}
 
-
+.navbar-default .navbar-brand:hover {
+  font-family: "Permanent Marker", cursive;
+  color: #d6e9ff;
+  font-size: 24px;
+}
 
 
 .clear-fix:after {
@@ -153,11 +168,29 @@ d6e9ff - lighter shade */
   margin-bottom: 25px;
 }
 
+.thumb-pic {
+
+}
+
 /*.thumbnail {
   margin-top: 25px;
 }*/
 
+
+
 /*End Thumbnail Styles */
+
+/* Parallax styles */
+
+.parallax {
+  background-image: url('../img/mum-cast.jpg');
+  min-height: 540px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /* Begin Footer Styles */
 
