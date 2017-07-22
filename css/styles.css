@@ -7,6 +7,18 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.shadow-text-sm {
+  text-shadow: 2px 2px 2px #bebebe;
+}
+
+.shadow-text-lg {
+  text-shadow: 4px 4px 8px #bebebe;
+}
+
+.shadow-text-lg-blu {
+  text-shadow: 4px 4px 8px #004ba8;
+}
+
 /*Begin header styles*/
 
 .header-box {
@@ -155,6 +167,7 @@ body {
   padding: 5px 40px 40px 40px;
   color: #fff;
   font-family: "Raleway", sans-serif;
+  height: 100%;
 }
 
 .caro-img {
@@ -167,6 +180,24 @@ body {
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 24px;
+}
+
+.item {
+  height: 512px;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+  color: #004ba8;
+
+}
+
+/* Media query to move indicators down on larger screens */
+
+@media screen and (min-width: 768px){
+
+  .carousel-indicators {
+    bottom: 0px;
+  }
 }
 
 /*Begin Thumbnail Styles */
@@ -221,10 +252,65 @@ body {
 }
 
 
+/* Begin contact styles */
+
+.contact-flex > .fa {
+  color: #004ba8;
+  font-size: 48px;
+  transition: 1s all;
+}
+
+.form-cont {
+  width: 100%;
+  height: 200px; /* CHANGE TO 100% WHEN FINISHED */
+  background-color: #004ba8;
+
+  box-shadow: 3px 3px 3px #bebebe;
+}
+
+.contact-row {
+  border: 1px solid #bebebe;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 3px #bebebe;
+  overflow: hidden;
+
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-right: 2px groove #bebebe;
+  min-height: 100px;
+
+}
+
+.contact-flex:hover .fa {
+  color: #82a1c7;
+  transform: rotate(360deg);
+}
+
+
+
+
+
+/*.lucky-div {
+  height: 100px;
+  width: 100px;
+  background-image: url(../img/lucky-grass-jpg.jpg);
+  border-radius: 50%;
+  background-position-x: 0px;
+  background-position-y: -41px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+} */
+
+
 /* Begin Footer Styles */
 
 footer {
-
   font-family: "Raleway", sans-serif;
   color: #fff;
 
@@ -277,6 +363,14 @@ footer {
   align-items: center;
   box-shadow: 3px 3px 0px #888888;
   position: relative;
+  overflow: hidden;
+
+}
+
+.footer-icon-box:hover .footer-shine {
+
+    transform: skewX(20deg) translateX(200px);
+  }
 }
 
 .footer-icon-box:active {
@@ -301,27 +395,18 @@ footer {
 }*/
 
 
-.icon-box {
-  border-radius: 10%;
-  border: 2px solid #fff;
+
+.footer-shine {
+
+  position: absolute;
+  top: 0;
+  left: -70px;
   height: 50px;
   width: 50px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all .3s linear;
+  transform: skewX(20deg) translateX(0);
 
-}
-
-.icon-box:active {
-  left: 3px;
-  top: 3px;
-  box-shadow: none;
-}
-
-.icon-box a {
-  color: #fff;
-  font-size: 30px;
 }
 
 

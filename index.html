@@ -21,17 +21,17 @@
   <header>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12 header-box htop">
+        <div class="col-sm-12 header-box htop shadow-text-lg">
           <h1>Leonard Ruggiero, jr</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 header-box hmid">
+        <div class="col-sm-12 header-box hmid shadow-text-sm">
           <h3>Web Developer</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 header-box hbtm">
+        <div class="col-sm-12 header-box hbtm shadow-text-sm">
           <h4>HTML / CSS</h4>
         </div>
       </div>
@@ -51,7 +51,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">LRj</a>
+        <a class="navbar-brand" href="#">JR</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -110,7 +110,7 @@
      <!-- Header for previous work -->
     <div class="row">
       <div class="col-sm-6">
-        <p class="caption-text">My Previous Work</p>
+        <p class="caption-text shadow-text-lg-blu">My Previous Work</p>
         <div class="blue-bar"></div>
       </div>
       <div class="col-sm-6"></div>
@@ -133,7 +133,7 @@
           <div class="caro-frame">
             <h1>Fresno Gaming Community Ladder</h1>
             <img src="img/fgc-ladder-ss.jpg" alt="FGC Ladder Site" class="img-responsive caro-img">
-            <div class="carousel-caption">
+            <div class="carousel-caption shadow-text-sm">
             <p>A site for competitive fighting game players in the Fresno area to test themselves.</p>
             </div>
           </div>
@@ -142,7 +142,7 @@
           <div class="caro-frame">
             <h1>Pet Store Sample</h1>
             <img src="img/petstore.jpg" alt="Class 1 final" class="img-responsive caro-img">
-            <div class="carousel-caption">
+            <div class="carousel-caption shadow-text-sm">
             <p>A sample website for a pet store.</p>
             </div>
           </div> <!-- End caro-frame -->
@@ -151,7 +151,7 @@
           <div class="caro-frame">
             <h1>My First Website</h1>
             <img src="img/c1f-ss.jpg" alt="Class 1 final" class="img-responsive caro-img">
-            <div class="carousel-caption">
+            <div class="carousel-caption shadow-text-sm">
             <p>The first website I built, for my first class.</p>
             </div>
           </div> <!-- End caro-frame -->
@@ -179,7 +179,7 @@
 
     <div class="row" class="about-me">
       <div class="col-sm-4">
-        <p class="caption-text">About Me</p>
+        <p class="caption-text shadow-text-lg-blu">About Me</p>
         <div class="blue-bar"></div>
       </div>
     </div> <!--End caption row -->
@@ -236,12 +236,57 @@
   </div> <!-- End container fluid for parallax -->
   <div class="container">
     <!-- Begin Contact -->
-    <div class="row" class="contact-me">
+    <div class="row" id="contact-me">
       <div class="col-sm-4">
-        <p class="caption-text">Contact Me</p>
+        <p class="caption-text shadow-text-lg-blu">Contact Me</p>
         <div class="blue-bar"></div>
       </div>
     </div> <!--End caption row -->
+    <div class="row" class="contact-outer-row"> <!-- Begin Contact-me section -->
+      <div class="col-sm-6"> <!-- Begin left half of contact (Form) -->
+        <div class="form-cont"></div>
+      </div> <!-- End left half of contact section -->
+      <div class="col-sm-6"> <!--- Begin right half of contact section -->
+
+        <div class="row contact-row"> <!-- Begin email -->
+          <div class="col-xs-2 contact-flex">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div class="col-xs-9">
+            <h4>E-mail</h4>
+            <p>Send an email to fleury14@comcast.net and let's talk.</p>
+          </div>
+        </div> <!-- end email -->
+        <div class="row contact-row"> <!-- begin github -->
+          <div class="col-xs-2 contact-flex">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </div>
+          <div class="col-xs-9">
+            <h4>Github</h4>
+            <p>Check out my repositories and see the work I've put in.</p>
+          </div>
+        </div> <!-- end github -->
+        <div class="row contact-row"> <!-- begin twitter -->
+          <div class="col-xs-2 contact-flex">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="col-xs-9">
+            <h4>Twitter</h4>
+            <p>Or send me a tweet and let's initiate contact.</p>
+          </div>
+        </div> <!-- end twitter -->
+        <div class="row contact-row"> <!-- begin facebook -->
+          <div class="col-xs-2 contact-flex">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div class="col-xs-9">
+            <h4>Facebook</h4>
+            <p>Finally, check out my facebook page if you want to see more of my interests.</p>
+          </div>
+        </div> <!-- end facebook -->
+      </div> <!-- right half of contact -->
+    </div> <!-- end contact row -->
+
     <!-- End contact -->
 
   </div> <!--End main container -->
@@ -258,24 +303,28 @@
           <div class="footer-icon-cont"> <!-- icon container -->
             <div class="footer-icon-box">
               <i class="fa fa-twitter" aria-hidden="true"></i>
+              <div class="footer-shine"></div>
             </div>
             <p>TWITTER</p>
           </div> <!-- end icon container -->
           <div class="footer-icon-cont"> <!-- icon container -->
             <div class="footer-icon-box">
               <i class="fa fa-facebook" aria-hidden="true"></i>
+              <div class="footer-shine"></div>
             </div>
             <p>FACEBOOK</p>
           </div> <!-- end icon container -->
           <div class="footer-icon-cont"> <!-- icon container -->
             <div class="footer-icon-box">
               <i class="fa fa-github" aria-hidden="true"></i>
+              <div class="footer-shine"></div>
             </div>
             <p>GITHUB</p>
           </div> <!-- end icon container -->
           <div class="footer-icon-cont"> <!-- icon container -->
             <div class="footer-icon-box">
               <i class="fa fa-envelope" aria-hidden="true"></i>
+              <div class="footer-shine"></div>
             </div>
             <p>E-MAIL</p>
           </div> <!-- end icon container -->
