@@ -71,14 +71,15 @@
               <li><a href="#">One more separated link</a></li>
             </ul>
           </li>
+          <li><a href="#contact-me">Contact Me</a></li>
         </ul>
-        <form class="navbar-form navbar-left">
+        <!-- <form class="navbar-form navbar-left">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
           </div>
           <button type="submit" class="btn btn-default nav-button">Submit</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
+        </form> -->
+        <!-- <ul class="nav navbar-nav navbar-right">
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -90,8 +91,8 @@
               <li><a href="#">Separated link</a></li>
             </ul>
           </li>
-          <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
+
+        </ul> -->
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
@@ -100,9 +101,12 @@
     <div class="jumbotron" class="jr-jumbo"> <!-- Begin hero element -->
       <h2 class="jumbo-head">Reigniting the passion for code.</h2>
     </div> <!-- End hero element -->
-    <p>Things about me.</p> <!-- Post hero description text -->
-
-
+    <p>I am a 38 year old aspiring coder and web-developer in Fresno, California. I am currently proficient in HTML and CSS, as well as capable of making static, responsive, mobile first websites using Bootstrap. I am also enrolled to take classes at Geekwise Academy in the Bitwise Stadium in downtown Fresno to learn JavaScript.</p> <!-- Post hero description text -->
+  </div> <!-- Temporarily end main container to allow fluid for parallax background -->
+  <div class="container-fluid parallax-cont"> <!-- Begin container fluid for parallax -->
+    <div class="parallax"></div> <!-- First parallax image -->
+  </div> <!-- End cont-fluid for parallax -->
+  <div class="container main-container"> <!-- Resume main container -->
      <!-- Header for previous work -->
     <div class="row">
       <div class="col-sm-6">
@@ -111,6 +115,8 @@
       </div>
       <div class="col-sm-6"></div>
     </div> <!-- End my work caption -->
+
+
 
     <!-- Begin Carousel?-->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -132,16 +138,25 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item"> <!-- Begin item -->
+          <div class="caro-frame">
+            <h1>Pet Store Sample</h1>
+            <img src="img/petstore.jpg" alt="Class 1 final" class="img-responsive caro-img">
+            <div class="carousel-caption">
+            <p>A sample website for a pet store.</p>
+            </div>
+          </div> <!-- End caro-frame -->
+        </div> <!-- End item -->
+        <div class="item"> <!-- Begin item -->
           <div class="caro-frame">
             <h1>My First Website</h1>
             <img src="img/c1f-ss.jpg" alt="Class 1 final" class="img-responsive caro-img">
             <div class="carousel-caption">
             <p>The first website I built, for my first class.</p>
             </div>
-          </div>
-        </div>
-        ...
+          </div> <!-- End caro-frame -->
+        </div> <!-- End item -->
+
       </div>
 
       <!-- Controls -->
@@ -193,10 +208,10 @@
     <div class="row"> <!-- Begin second thumnail row -->
       <div class="col-sm-6">
         <div class="thumbnail"> <!-- Thumbnail 3 -->
-          <img src="..." alt="...">
+          <img src="img/jrmm1.jpg" alt="mother mary's">
           <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
+            <h3>Mother Mary's</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis expedita deleniti, pariatur harum officiis sapiente maiores, accusamus eum a doloribus odio ipsam et blanditiis, excepturi possimus. Iste quas amet pariatur.</p>
             <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
           </div>
         </div> <!-- End Thumbnail 3 -->
@@ -214,10 +229,12 @@
     </div> <!--- End second row of thumbnails -->
 
 <!-- End about me thumbnails -->
-
+  </div> <!-- End container to allow container fluid for second parallax -->
+  <div class="container-fluid parallax-cont">
 <!-- Begin parallax attempt -->
-    <div class="parallax"></div>
-
+    <div class="parallax-2"></div>
+  </div> <!-- End container fluid for parallax -->
+  <div class="container">
     <!-- Begin Contact -->
     <div class="row" class="contact-me">
       <div class="col-sm-4">

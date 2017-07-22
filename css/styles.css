@@ -76,7 +76,7 @@ body {
  }
 
 .navbar-default {
-  border-color: #d6e9ff;
+  border: none;
   /*position: sticky;
   top: 0px;*/
   font-family: "Raleway", sans-serif;
@@ -95,9 +95,24 @@ body {
   background-color: #d6e9ff;
 }
 
+.navbar-nav li {
+
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #fff;
   transition: 0.3s all;
+  box-shadow: -3px -3px 3px #bbb;
+  position: relative;
+  margin-left: 20px;
+  border: 1px solid #fff;
+  margin-bottom: 3px;
+}
+
+.navbar-default .navbar-nav>li>a:active {
+  bottom: 3px;
+  right: 3px;
+  box-shadow: none;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -172,9 +187,9 @@ body {
 
 }
 
-/*.thumbnail {
-  margin-top: 25px;
-}*/
+.thumbnail {
+  box-shadow: 5px 5px 5px #bebebe;
+}
 
 
 
@@ -182,7 +197,21 @@ body {
 
 /* Parallax styles */
 
+.parallax-cont {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .parallax {
+  min-height: 540px;
+  background-image: url('../img/geekwise-2.JPG');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
   background-image: url('../img/mum-cast.jpg');
   min-height: 540px;
   background-attachment: fixed;
