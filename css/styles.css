@@ -7,6 +7,14 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.deep-blue-color {
+  color: #004ba8
+}
+
+.deep-blue-bg {
+  background-color: #004ba8;
+}
+
 .shadow-text-sm {
   text-shadow: 2px 2px 2px #bebebe;
 }
@@ -200,11 +208,32 @@ body {
   }
 }
 
+/* End Carousel Styles  */
+
+/*Begin Services Styles */
+
+.serv-question {
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+.services-icons {
+  font-size: 48px;
+  padding-right: 30px;
+}
+
+.list-group-item h3 {
+  text-shadow: 1px 1px 2px #bebebe;
+}
+
+/*End Services Styles */
+
 /*Begin Thumbnail Styles */
 
 .caption-text {
   font-size: 48px;
   font-family: "Raleway", sans-serif;
+  margin-top: 25px;
 }
 
 .blue-bar {
