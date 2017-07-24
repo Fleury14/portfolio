@@ -264,7 +264,7 @@ body {
 
 .parallax {
   min-height: 540px;
-  background-image: url('../img/geekwise-2.JPG');
+  background-image: url('../img/geekwise-2.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
