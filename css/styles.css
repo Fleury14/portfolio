@@ -1,4 +1,31 @@
-/*Color pallette: https://coolors.co/6290c3-004ba8-067bc2-0a369d-cfdee7*/
+/*Color pallette: 004ba8 - Deep blue
+d6e9ff - lighter shade */
+
+/* Begin Global Style */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.deep-blue-color {
+  color: #004ba8
+}
+
+.deep-blue-bg {
+  background-color: #004ba8;
+}
+
+.shadow-text-sm {
+  text-shadow: 2px 2px 2px #bebebe;
+}
+
+.shadow-text-lg {
+  text-shadow: 4px 4px 8px #bebebe;
+}
+
+.shadow-text-lg-blu {
+  text-shadow: 4px 4px 8px #004ba8;
+}
 
 /*Begin header styles*/
 
@@ -35,15 +62,49 @@
 
 /*Begin Navbar styles*/
 
+
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.affix + .main-container {
+  padding-top: 52px;
+}
+
+.navbar-default .navbar-brand {
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+  font-size: 24px;
+}
+
+.navbar-default .navbar-brand:hover {
+  font-family: "Permanent Marker", cursive;
+  color: #d6e9ff;
+  font-size: 24px;
+}
+
+
+.clear-fix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+ }
+
 .navbar-default {
-  border-color: #d6e9ff;
-  position: sticky;
-  top: 0px;
+  border: none;
+  /*position: sticky;
+  top: 0px;*/
   font-family: "Raleway", sans-serif;
 }
 
 .nav-container {
   background-color: #004ba8;
+
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -54,9 +115,24 @@
   background-color: #d6e9ff;
 }
 
+.navbar-nav li {
+
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #fff;
   transition: 0.3s all;
+  box-shadow: -3px -3px 3px #bbb;
+  position: relative;
+  margin-left: 20px;
+  border: 1px solid #fff;
+  margin-bottom: 3px;
+}
+
+.navbar-default .navbar-nav>li>a:active {
+  bottom: 3px;
+  right: 3px;
+  box-shadow: none;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -83,9 +159,284 @@
 
 /*End Navbar styles*/
 
-.body-test {
-  height: 1200px;
-  width: 100%;
+/* Begin Jumbotron Styles */
+
+.jumbo-head {
+  font-family: "Permanent Marker", cursive;
+  font-size: 32px;
 }
+
+/* End Jumbotron Styles */
+
+/* Begin Carousel Styles */
+
+.caro-frame {
+  background-color: #004ba8;
+  padding: 5px 40px 40px 40px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+.caro-img {
+  border: 5px solid #000;
+}
+
+.carousel-caption p {
+  color: #fff;
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+}
+
+.item {
+  height: 512px;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+  color: #004ba8;
+
+}
+
+/* Media query to move indicators down on larger screens */
+
+@media screen and (min-width: 768px){
+
+  .carousel-indicators {
+    bottom: 0px;
+  }
+}
+
+/* End Carousel Styles  */
+
+/*Begin Services Styles */
+
+.serv-question {
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+.services-icons {
+  font-size: 48px;
+  padding-right: 30px;
+}
+
+.list-group-item h3 {
+  text-shadow: 1px 1px 2px #bebebe;
+}
+
+/*End Services Styles */
+
+/*Begin Thumbnail Styles */
+
+.caption-text {
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 25px;
+}
+
+.blue-bar {
+  height: 5px;
+  width: 100%;
+  background-color: #004ba8;
+  margin-bottom: 25px;
+}
+
+.thumb-pic {
+
+}
+
+.thumbnail {
+  box-shadow: 5px 5px 5px #bebebe;
+}
+
+
+
+/*End Thumbnail Styles */
+
+/* Parallax styles */
+
+.parallax-cont {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.parallax {
+  min-height: 540px;
+  background-image: url('../img/geekwise-2.JPG');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
+  background-image: url('../img/mum-cast.jpg');
+  min-height: 540px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Begin contact styles */
+
+.contact-flex > .fa {
+  color: #004ba8;
+  font-size: 48px;
+  transition: 1s all;
+}
+
+.form-cont {
+  width: 100%;
+  height: 200px; /* CHANGE TO 100% WHEN FINISHED */
+  background-color: #004ba8;
+
+  box-shadow: 3px 3px 3px #bebebe;
+}
+
+.contact-row {
+  border: 1px solid #bebebe;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 3px #bebebe;
+  overflow: hidden;
+
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-right: 2px groove #bebebe;
+  min-height: 100px;
+
+}
+
+.contact-flex:hover .fa {
+  color: #82a1c7;
+  transform: rotate(360deg);
+}
+
+
+
+
+
+/*.lucky-div {
+  height: 100px;
+  width: 100px;
+  background-image: url(../img/lucky-grass-jpg.jpg);
+  border-radius: 50%;
+  background-position-x: 0px;
+  background-position-y: -41px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+} */
+
+
+/* Begin Footer Styles */
+
+footer {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+
+}
+
+.footer-cont {
+  height: 150px;
+
+}
+
+.footie-col {
+  background-color: #004ba8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.vert-bar {
+  height: 75px;
+  width: 2px;
+  background-color: #d6e9ff;
+  transform: rotate(45deg);
+}
+
+.icon-flex {
+  background-color: #004ba8;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-icon-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.footer-icon-box {
+  border: 2px solid #fff;
+  border-radius: 5%;
+  height: 50px;
+  width: 50px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 0px #888888;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.footer-icon-box:hover .footer-shine {
+
+    transform: skewX(20deg) translateX(200px);
+  }
+}
+
+.footer-icon-box:active {
+  box-shadow: none;
+  left: 3px;
+  top: 3px;
+}
+
+.icon-holder {
+  height: 70px;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.icon-row {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}*/
+
+
+
+.footer-shine {
+
+  position: absolute;
+  top: 0;
+  left: -70px;
+  height: 50px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all .3s linear;
+  transform: skewX(20deg) translateX(0);
+
+}
+
 
 /*Media Queries*/
