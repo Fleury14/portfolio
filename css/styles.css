@@ -1,6 +1,11 @@
 /*Color pallette: 004ba8 - Deep blue
 d6e9ff - lighter shade */
 
+/* Z-index notes:
+
+carousel-controles: 15
+affix (nav): 20 */
+
 /* Begin Global Style */
 
 body {
@@ -73,7 +78,7 @@ body {
 .affix {
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
 }
 
 .affix + .main-container {
@@ -151,6 +156,20 @@ body {
   color: #fff;
 }
 
+/* Hamburger (yum) menu styles */
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+      color: #fff;
+    }
+
+}
+
 /*End Navbar styles*/
 
 /* Begin Jumbotron Styles */
@@ -218,6 +237,11 @@ body {
 
 /*Begin Services Styles */
 
+.services-flex {
+  display: flex;
+  align-items: center;
+}
+
 .serv-question {
   padding-left: 15px;
   font-weight: 600;
@@ -226,6 +250,8 @@ body {
 .services-icons {
   font-size: 48px;
   padding-right: 30px;
+  height: 100%;
+  width: 71px;
 }
 
 .list-group-item h3 {
@@ -253,6 +279,10 @@ body {
   box-shadow: 5px 5px 5px #bebebe;
 }
 
+.embed-responsive-item {
+  width: 100%;
+  height: 100%;
+}
 
 
 /*End Thumbnail Styles */
@@ -300,7 +330,14 @@ body {
   border: 1px solid #bebebe;
   margin-bottom: 20px;
   overflow: hidden;
+  position: relative;
+  color: #000;
+}
 
+.contact-row:active {
+  top: 3px;
+  left: 3px;
+  box-shadow: none;
 }
 
 .contact-flex {
