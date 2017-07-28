@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 header-box deep-blue-bg hmid shadow-text-sm">
+        <div class="col-sm-12 header-box deep-blue-bg hmid align-center shadow-text-sm">
           <h3>Web Developer</h3>
         </div>
       </div>
@@ -198,7 +198,7 @@
       <p class="serv-question deep-blue-color text-center">So what exactly do I do?</p>
       <div class="col-sm-8 col-sm-offset-2 col-xs-12"> <!-- Begin services col -->
         <ul class="list-group">
-          <li class="list-group-item services-flex"> <!-- begin HTML -->
+          <li class="list-group-item flex-container align-center"> <!-- begin HTML -->
             <div class="services-icons pull-left">
               <i class="fa fa-sitemap deep-blue-color" aria-hidden="true"></i>
             </div>
@@ -207,7 +207,7 @@
               <p class="list-group-item-text">HTML is the foundation on which websites are built. My goal is not only to have the website as effective for the user as possible, but for the code inside to be equally efficient.</p>
             </div>
           </li> <!-- End HTML -->
-          <li class="list-group-item services-flex"> <!-- Begin CSS -->
+          <li class="list-group-item flex-container align-center"> <!-- Begin CSS -->
             <div class="services-icons">
               <i class="fa fa-cog deep-blue-color" aria-hidden="true"></i>
             </div>
@@ -216,7 +216,7 @@
               <p class="list-group-item-text">CSS is what transforms a website from a bare-bones block of text to the colorful sites you see today. Efficient coding is just as important here, as is maintaining the direction of Object Oriented CSS to make as much of the code as re-usable as possible.</p>
             </div>
           </li> <!-- End CSS -->
-          <li class="list-group-item services-flex"> <!-- begin responsive -->
+          <li class="list-group-item flex-container align-center"> <!-- begin responsive -->
             <div class="services-icons pull-left">
               <i class="fa fa-desktop deep-blue-color" aria-hidden="true"></i>
             </div>
@@ -225,7 +225,7 @@
               <p class="list-group-item-text">With as many difference devices available to view websites as there are today, designing a website that is responsive is a must. Thanks to bootstrap, I can create mobile-first sites that can be viewed on any device.</p>
             </div>
           </li> <!-- End responsive -->
-          <li class="list-group-item services-flex"> <!-- begin git -->
+          <li class="list-group-item flex-container align-center"> <!-- begin git -->
             <div class="services-icons pull-left">
               <i class="fa fa-git deep-blue-color" aria-hidden="true"></i>
             </div>
@@ -312,13 +312,65 @@
     </div> <!--End caption row -->
     <div class="row" class="contact-outer-row"> <!-- Begin Contact-me section -->
       <div class="col-sm-6"> <!-- Begin left half of contact (Form) -->
-        <div class="form-cont deep-blue-bg grey-box-shadow"></div>
+        <div class="form-outer-cont deep-blue-bg grey-box-shadow"> <!-- Begin blue frame for contact-form -->
+          <div class="row flex-container justify-center"> <!-- Begin flex container for form -->
+            <div class="col-xs-10 form-container light-blue-bg grey-box-shadow"> <!-- Begin form colum .form-container -->
+              <h4>Use this form to send me a simple message via e-mail.</h4>
+              <form class="contact-form" id="emailForm" method="POST">
+                <div class="form-group">
+                  <label for="name">Full Name:</label>
+                  <input type="text"
+                         class="form-control"
+                         id="name"
+                         name="name"
+                         required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address:</label>
+                  <input type="text"
+                         class="form-control"
+                         id="email"
+                         name="_replyto"
+                         required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="text"
+                         class="form-control"
+                         id="phone"
+                         name="phone">
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message:</label>
+                  <textarea type="text"
+                            class="form-control"
+                            id="message"
+                            name="message"
+                            maxlength="200"
+                            required>
+                  </textarea>
+                  <p id="maxCharacters"></p>
+                  <input type="hidden"
+                         name="_subject"
+                         value="Website contact" />
+                  <input type="hidden"
+                         name="_gotcha"/>
+                </div>
+                <button class="btn btn-sm btn-primary"
+                        type="submit"
+                        id="submitButton">
+                    Submit
+                </button>
+              </form>
+            </div> <!-- end form column .form-container -->
+          </div> <!-- End flex container for form -->
+        </div> <!-- End blue frame for contact form -->
       </div> <!-- End left half of contact section -->
       <div class="col-sm-6"> <!--- Begin right half of contact section -->
 
         <a href="mailto:fleury14@comcast.net">
           <div class="row contact-row grey-box-shadow"> <!-- Begin email -->
-            <div class="col-xs-2 contact-flex">
+            <div class="col-xs-2 contact-flex flex-container align-center justify-center">
               <i class="fa fa-envelope" aria-hidden="true"></i>
             </div>
             <div class="col-xs-9">
@@ -329,7 +381,7 @@
         </a>
         <a href="http://www.github.com/fleury14" target="_blank">
           <div class="row contact-row grey-box-shadow"> <!-- begin github -->
-            <div class="col-xs-2 contact-flex">
+            <div class="col-xs-2 contact-flex flex-container align-center justify-center">
               <i class="fa fa-github" aria-hidden="true"></i>
             </div>
             <div class="col-xs-9">
@@ -340,7 +392,7 @@
         </a>
         <a href="http://www.twitter.com/LQFleury14" target="_blank">
           <div class="row contact-row grey-box-shadow"> <!-- begin twitter -->
-            <div class="col-xs-2 contact-flex">
+            <div class="col-xs-2 contact-flex flex-container align-center justify-center">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </div>
             <div class="col-xs-9">
@@ -351,7 +403,7 @@
         </a>
         <a href="https://www.facebook.com/profile.php?id=1822326619" target="_blank">
           <div class="row contact-row grey-box-shadow"> <!-- begin facebook -->
-            <div class="col-xs-2 contact-flex">
+            <div class="col-xs-2 contact-flex flex-container align-center justify-center">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </div>
             <div class="col-xs-9">
@@ -369,35 +421,35 @@
   <footer>
     <div class="container-fluid footer-cont"> <!-- begin footer container -->
       <div class="row">
-        <div class="col-sm-4 footie-col deep-blue-bg text-center"> <!-- Copyright text -->
+        <div class="col-sm-4 footie-col flex-container justify-center align-center deep-blue-bg text-center"> <!-- Copyright text -->
           <p>&copy;2017, Leonard Ruggiero jr. All Rights Reserved.</p>
         </div>
-        <div class="col-sm-4 footie-col deep-blue-bg hidden-xs"> <!-- Divider bar -->
+        <div class="col-sm-4 footie-col flex-container justify-center align-center deep-blue-bg hidden-xs"> <!-- Divider bar -->
           <div class="vert-bar light-blue-bg"></div>
         </div>
-        <div class="col-sm-4 deep-blue-bg icon-flex">
-          <div class="footer-icon-cont"> <!-- icon container -->
+        <div class="col-sm-4 deep-blue-bg icon-flex flex-container align-center">
+          <div class="footer-icon-cont flex-container align-center"> <!-- icon container -->
             <div class="footer-icon-box">
               <i class="fa fa-twitter" aria-hidden="true"></i>
               <div class="footer-shine"></div>
             </div>
             <p>TWITTER</p>
           </div> <!-- end icon container -->
-          <div class="footer-icon-cont"> <!-- icon container -->
+          <div class="footer-icon-cont flex-container align-center"> <!-- icon container -->
             <div class="footer-icon-box">
               <i class="fa fa-facebook" aria-hidden="true"></i>
               <div class="footer-shine"></div>
             </div>
             <p>FACEBOOK</p>
           </div> <!-- end icon container -->
-          <div class="footer-icon-cont"> <!-- icon container -->
+          <div class="footer-icon-cont flex-container align-center"> <!-- icon container -->
             <div class="footer-icon-box">
               <i class="fa fa-github" aria-hidden="true"></i>
               <div class="footer-shine"></div>
             </div>
             <p>GITHUB</p>
           </div> <!-- end icon container -->
-          <div class="footer-icon-cont"> <!-- icon container -->
+          <div class="footer-icon-cont flex-container align-center"> <!-- icon container -->
             <div class="footer-icon-box">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <div class="footer-shine"></div>
@@ -410,6 +462,7 @@
 
     </div> <!-- end footer container-fluid -->
   </footer>
+      <script src="js/script.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script>
