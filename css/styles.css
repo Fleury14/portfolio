@@ -10,7 +10,14 @@ affix (nav): 20 */
 
 body {
   font-family: "Raleway", sans-serif;
+  position: relative;
 }
+
+#jumbotron-anchor, #prev-work-anchor, #services-anchor, #about-anchor, #contact-anchor {
+  display: block;
+  padding-top: 55px;
+  margin-top: -55px;
+} /* Used anchor tags just before the section to account for the fixed navbar on top when skipping to parts of the page */
 
 .deep-blue-color {
   color: #004ba8
@@ -191,6 +198,8 @@ body {
   font-size: 32px;
 }
 
+
+
 /* End Jumbotron Styles */
 
 /* Begin Well styles */
@@ -201,6 +210,13 @@ body {
 }
 
 /* Begin Carousel Styles */
+
+#prev-work-anchor {
+  display: block;
+  padding-top: 55px;
+  margin-top: -55px;
+
+}
 
 .caro-frame {
   padding: 5px 40px 40px 40px;

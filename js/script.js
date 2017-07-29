@@ -46,3 +46,5 @@
     myForm.setAttribute('action', 'https://formspree.io/fleury14@comcast.net');
   });
 }());
+
+$('body').scrollspy({ target: '#navbar-example' })
