@@ -204,9 +204,19 @@ body {
 
 /* Begin Jumbotron Styles */
 
+
+.jumbotron {
+  background-image: url(../img/jumbotron-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+}
+
 .jumbo-head {
   font-family: "Permanent Marker", cursive;
-  font-size: 32px;
+  font-size: 48px;
+  color: #fff;
 }
 
 
