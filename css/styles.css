@@ -40,6 +40,18 @@ body {
   box-shadow: 3px 3px #bebebe;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 /*Begin header styles*/
 
 .header-box {
@@ -56,7 +68,6 @@ body {
 
 .hmid {
   height: 50px;
-  align-items: center;
 }
 
 .hbtm {
@@ -109,6 +120,7 @@ body {
 .navbar-default {
   border: none;
 }
+
 
 .navbar-default .navbar-nav>.active>a {
   background-color: #d6e9ff;
@@ -237,10 +249,6 @@ body {
 
 /*Begin Services Styles */
 
-.services-flex {
-  display: flex;
-  align-items: center;
-}
 
 .serv-question {
   padding-left: 15px;
@@ -279,7 +287,7 @@ body {
   box-shadow: 5px 5px 5px #bebebe;
 }
 
-.embed-responsive-item {
+.about-bowling-vid {
   width: 100%;
   height: 100%;
 }
@@ -321,10 +329,36 @@ body {
   transition: 1s all;
 }
 
-.form-cont {
+.form-outer-cont {
   width: 100%;
-  height: 200px; /* CHANGE TO 100% WHEN FINISHED */
+  height: 100%; /* CHANGE TO 100% WHEN FINISHED */
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
 }
+
+/* Begin Pasted contact styles from formspree form */
+
+
+
+.form-container {
+  padding: 20px;
+}
+
+.form-container h4 {
+  margin-top: 0px;
+}
+
+.contact-form textarea {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.danger {
+  border-color: #f00;
+}
+
+/* End pasted contact styles */
 
 .contact-row {
   border: 1px solid #bebebe;
@@ -341,13 +375,9 @@ body {
 }
 
 .contact-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   border-right: 2px groove #bebebe;
   min-height: 100px;
-
 }
 
 .contact-flex:hover .fa {
@@ -369,9 +399,6 @@ footer {
 }
 
 .footie-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 150px;
 }
 
@@ -383,16 +410,12 @@ footer {
 
 .icon-flex {
   height: 150px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .footer-icon-cont {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   height: 90px;
 }
 
