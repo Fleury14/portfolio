@@ -10,7 +10,14 @@ affix (nav): 20 */
 
 body {
   font-family: "Raleway", sans-serif;
+  position: relative;
 }
+
+#jumbotron-anchor, #prev-work-anchor, #services-anchor, #about-anchor, #contact-anchor {
+  display: block;
+  padding-top: 55px;
+  margin-top: -55px;
+} /* Used anchor tags just before the section to account for the fixed navbar on top when skipping to parts of the page */
 
 .deep-blue-color {
   color: #004ba8
@@ -153,6 +160,17 @@ body {
 .navbar-default .navbar-nav>li>a:hover {
   color: #d6e9ff;
   transition: 0.3s all;
+  animation-name: button-wobble;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes button-wobble {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(-10deg);}
+  75% {transform: rotate(10deg);}
+  100% {transform: rotate(-5deg);}
 }
 
 .navbar-default .navbar-nav>.open>a:focus {
@@ -186,10 +204,22 @@ body {
 
 /* Begin Jumbotron Styles */
 
+
+.jumbotron {
+  background-image: url(../img/jumbotron-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+}
+
 .jumbo-head {
   font-family: "Permanent Marker", cursive;
-  font-size: 32px;
+  font-size: 48px;
+  color: #fff;
 }
+
+
 
 /* End Jumbotron Styles */
 
@@ -201,6 +231,13 @@ body {
 }
 
 /* Begin Carousel Styles */
+
+#prev-work-anchor {
+  display: block;
+  padding-top: 55px;
+  margin-top: -55px;
+
+}
 
 .caro-frame {
   padding: 5px 40px 40px 40px;
@@ -260,6 +297,13 @@ body {
   padding-right: 30px;
   height: 100%;
   width: 71px;
+  transition: 1s all;
+}
+
+.services-icons:hover {
+  -webkit-transform: rotatey(360deg);
+  transform: rotatey(360deg);
+  transform-origin: 20% 50%;
 }
 
 .list-group-item h3 {

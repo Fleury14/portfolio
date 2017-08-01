@@ -17,7 +17,7 @@
 
   <title>Portfolio for J.R. Ruggiero</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#my-nav">
 
   <header>
     <div class="container-fluid">
@@ -42,7 +42,7 @@
   </header>
 
 
-  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="282">
+  <nav class="navbar navbar-default" id="my-nav" data-spy="affix" data-offset-top="282">
     <div class="container-fluid nav-container deep-blue-bg">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -58,7 +58,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <ul class="nav navbar-nav">
-          <li class="active"><a href="#jr-jumbo">Home <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="#jumbotron-anchor">Home <span class="sr-only">(current)</span></a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Previous Work<span class="caret"></span></a>
             <ul class="dropdown-menu light-blue-bg">
@@ -66,13 +66,13 @@
               <li><a href="https://geekwiseb2.github.io/petstore-july-2017-Fleury14/" target="_blank">Pet Shop Sample</a></li>
               <li><a href="http://fleury14.github.io/class1final/index.html" target="_blank">My First Website</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#previous-work">Summary</a></li>
+              <li><a href="#prev-work-anchor">Summary</a></li>
             </ul>
           </li>
-          <li><a href="#my-services">Services</a></li>
-          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#services-anchor">Services</a></li>
+          <li><a href="#about-anchor">About Me</a></li>
 
-          <li><a href="#contact-me">Contact Me</a></li>
+          <li><a href="#contact-anchor">Contact Me</a></li>
         </ul>
         <!-- <form class="navbar-form navbar-left">
           <div class="form-group">
@@ -97,10 +97,10 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
+  <a href="" id="jumbotron-anchor"></a>
   <div class="container main-container"> <!--Begin main container-->
-    <div class="jumbotron" id="jr-jumbo"> <!-- Begin hero element -->
-      <h2 class="jumbo-head">Reigniting the passion for code.</h2>
+    <div class="jumbotron flex-container justify-center align-center"> <!-- Begin hero element -->
+      <h2 class="jumbo-head">Reigniting the passion for code</h2>
     </div> <!-- End hero element -->
 
     <div class="well well-lg light-blue-bg grey-box-shadow"> <!-- Start summary well -->
@@ -114,7 +114,8 @@
   <div class="container-fluid parallax-cont"> <!-- Begin container fluid for parallax -->
     <div class="parallax"></div> <!-- First parallax image -->
   </div> <!-- End cont-fluid for parallax -->
-  <div class="container main-container" id="previous-work"> <!-- Resume main container -->
+  <a href="" id="prev-work-anchor"></a>
+  <div class="container main-container"> <!-- Resume main container -->
      <!-- Header for previous work -->
     <div class="row">
       <div class="col-sm-6">
@@ -186,10 +187,10 @@
     <!-- End Carousel Consider putting slides inside a frame-->
 
     <!-- Begin Services -->
-
+    <a href="" id="services-anchor"></a>
     <div class="row">
       <div class="col-sm-6">
-        <p class="caption-text shadow-text-lg-blu" id="my-services">My Services</p>
+        <p class="caption-text shadow-text-lg-blu">My Services</p>
         <div class="blue-bar"></div>
       </div>
       <div class="col-sm-6"></div>
@@ -241,8 +242,8 @@
     <!-- End Services -->
 
     <!-- Begin about me thumbnails -->
-
-    <div class="row" id="about-me">
+    <a href="" id="about-anchor"></a>
+    <div class="row">
       <div class="col-sm-4">
         <p class="caption-text shadow-text-lg-blu">About Me</p>
         <div class="blue-bar"></div>
@@ -286,7 +287,7 @@
         </div> <!-- End Thumbnail 3 -->
       </div><!-- End first thumbnail col -->
       <div class="col-sm-6">
-        <div class="thumbnail"> <!-- Thumbnail 3 -->
+        <div class="thumbnail"> <!-- Thumbnail 4 -->
           <img src="img/evo-stage-horiz.jpg" alt="evo stage" class="img-responsive thumb-pic">
           <div class="caption">
             <h3>Fighting Games</h3>
@@ -304,6 +305,7 @@
   </div> <!-- End container fluid for parallax -->
   <div class="container">
     <!-- Begin Contact -->
+    <a href="" id="contact-anchor"></a>
     <div class="row" id="contact-me">
       <div class="col-sm-4">
         <p class="caption-text shadow-text-lg-blu">Contact Me</p>
@@ -375,7 +377,7 @@
             </div>
             <div class="col-xs-9">
               <h4>E-mail</h4>
-              <p>Send an email to fleury14@comcast.net and let's talk.</p>
+              <p>If you'd like to send a more detailed message using your e-mail client, click here.</p>
             </div>
           </div> <!-- end email -->
         </a>
