@@ -438,7 +438,7 @@ body {
   background-size: cover;
 }
 
-@media only screen and (max-height: 768px) {
+@media only screen and (max-width: 768px) {
   .parallax, .parallax-2 {
     height: 300px;
     min-height: 0;
