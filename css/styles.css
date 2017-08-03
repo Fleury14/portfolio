@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway');
+
+
 /*Color pallette: 004ba8 - Deep blue
 d6e9ff - lighter shade */
 
@@ -61,6 +64,10 @@ body {
 }
 
 /*Begin header styles*/
+
+.intro-button {
+  color: #fff;
+}
 
 .header-box {
   color: #fff;
