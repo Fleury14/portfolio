@@ -8,13 +8,473 @@
   <meta name="keywords" content="J.R., Ruggiero, HTML, CSS, Geekwise, portfolio, employment">
   <meta name="author" content="J.R. Ruggiero">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/jpg" href="img/jr-icon.jpg">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
   <title>Portfolio for J.R. Ruggiero</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#my-nav">
+  <a href="" id="top-anchor"></a>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 header-box flex-container deep-blue-bg shadow-text-sm">
+          <a href="intro.html">
+            <button type="button" class="btn btn-primary btn-xs intro-button deep-blue-bg">View Intro</button>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 header-box flex-container justify-center text-center deep-blue-bg htop shadow-text-lg">
+          <h1>Leonard Ruggiero, jr</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 header-box flex-container justify-center deep-blue-bg hmid align-center shadow-text-sm">
+          <h3>Web Developer</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 header-box flex-container justify-center deep-blue-bg hbtm shadow-text-sm">
+          <h4>HTML / CSS</h4>
+        </div>
+      </div>
+
+    </div> <!-- End header Container. Used three rows to prevent margin isues on resize that I couldn't quite fix with media queries -->
+
+  </header>
+
+
+  <nav class="navbar navbar-default" id="my-nav" data-spy="affix" data-offset-top="282">
+    <div class="container-fluid nav-container deep-blue-bg">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">LRj</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav">
+          <li class="active"><a href="#top-anchor">Top <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Previous Work<span class="caret"></span></a>
+            <ul class="dropdown-menu light-blue-bg">
+              <li><a href="http://fleury14.github.io/fgcladder/index.html" target="_blank">FGC Ladder</a></li>
+              <li><a href="https://geekwiseb2.github.io/petstore-july-2017-Fleury14/" target="_blank">Pet Shop Sample</a></li>
+              <li><a href="http://fleury14.github.io/class1final/index.html" target="_blank">My First Website</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#prev-work-anchor">Summary</a></li>
+            </ul>
+          </li>
+          <li><a href="#services-anchor">Services</a></li>
+          <li><a href="#about-anchor">About Me</a></li>
+
+          <li><a href="#contact-anchor">Contact Me</a></li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <a href="" id="jumbotron-anchor" class="anchor-adjustment"></a>
+  <div class="container main-container"> <!--Begin main container-->
+    <div class="jumbotron flex-container justify-center align-center"> <!-- Begin hero element -->
+      <h2 class="jumbo-head text-center">Reigniting the passion for code</h2>
+    </div> <!-- End hero element -->
+
+    <div class="well well-lg light-blue-bg grey-box-shadow"> <!-- Start summary well -->
+      <img src="img/lucky-grass-jpg.jpg" alt="Lucky" class="img-circle pull-left">
+      <p>I am a 38 year old aspiring coder and web-developer in Fresno, California. I am currently proficient in HTML and CSS, as well as capable of making static, responsive, mobile first websites using Bootstrap. I am also enrolled to take classes at Geekwise Academy in the Bitwise Stadium in downtown Fresno to learn JavaScript.</p> <!-- Post hero description text -->
+    </div> <!-- End summary well -->
+
+
+
+  </div> <!-- Temporarily end main container to allow fluid for parallax background -->
+  <div class="container-fluid parallax-cont"> <!-- Begin container fluid for parallax -->
+    <div class="parallax"></div> <!-- First parallax image -->
+  </div> <!-- End cont-fluid for parallax -->
+  <a href="" id="prev-work-anchor" class="anchor-adjustment"></a>
+  <div class="container main-container"> <!-- Resume main container -->
+     <!-- Header for previous work -->
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="caption-text shadow-text-lg-blu">My Previous Work</p>
+        <div class="blue-bar"></div>
+      </div>
+      <div class="col-sm-6"></div>
+    </div> <!-- End my work caption -->
+
+
+
+    <!-- Begin Carousel?-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="http://fleury14.github.io/fgcladder/index.html" target="_blank">
+            <div class="caro-frame deep-blue-bg">
+              <h1>Fresno Gaming Community Ladder</h1>
+              <img src="img/fgc-ladder-ss.jpg" alt="FGC Ladder Site" class="img-responsive caro-img">
+              <div class="carousel-caption shadow-text-sm">
+              <p>A site for competitive fighting game players in the Fresno area to test themselves.</p>
+              </div>
+            </div>
+        </a>
+        </div>
+        <div class="item"> <!-- Begin item -->
+          <a href="https://geekwiseb2.github.io/petstore-july-2017-Fleury14/" target="_blank">
+            <div class="caro-frame deep-blue-bg">
+              <h1>Restaurant Sample</h1>
+              <img src="img/restaurante-ss.jpg" alt="Restaurante Sample" class="img-responsive caro-img">
+              <div class="carousel-caption shadow-text-sm">
+              <p>A sample website for a restaurant.</p>
+              </div>
+            </div> <!-- End caro-frame -->
+          </a>
+        </div> <!-- End item -->
+        <div class="item"> <!-- Begin item -->
+          <a href="https://geekwiseb2.github.io/petstore-july-2017-Fleury14/" target="_blank">
+            <div class="caro-frame deep-blue-bg">
+              <h1>Pet Store Sample</h1>
+              <img src="img/petstore.jpg" alt="Class 1 final" class="img-responsive caro-img">
+              <div class="carousel-caption shadow-text-sm">
+              <p>A sample website for a pet store.</p>
+              </div>
+            </div> <!-- End caro-frame -->
+          </a>
+        </div> <!-- End item -->
+        <div class="item"> <!-- Begin item -->
+          <a href="http://fleury14.github.io/class1final/index.html" target="_blank">
+            <div class="caro-frame deep-blue-bg">
+              <h1>My First Website</h1>
+              <img src="img/c1f-ss.jpg" alt="Class 1 final" class="img-responsive caro-img">
+              <div class="carousel-caption shadow-text-sm">
+              <p>The first website I built, for my first class.</p>
+              </div>
+            </div> <!-- End caro-frame -->
+          </a>
+        </div> <!-- End item -->
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- End Carousel Consider putting slides inside a frame-->
+
+    <!-- Begin Services -->
+    <a href="" id="services-anchor" class="anchor-adjustment"></a>
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="caption-text shadow-text-lg-blu">My Services</p>
+        <div class="blue-bar"></div>
+      </div>
+      <div class="col-sm-6"></div>
+    </div> <!-- services caption -->
+    <div class="row">
+      <p class="serv-question deep-blue-color text-center">So what exactly do I do?</p>
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12"> <!-- Begin services col -->
+        <ul class="list-group">
+          <li class="list-group-item flex-container align-center"> <!-- begin HTML -->
+            <div class="services-icons pull-left">
+              <i class="fa fa-sitemap deep-blue-color" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3 class="list-group-item-heading">HTML</h3>
+              <p class="list-group-item-text">HTML is the foundation on which websites are built. My goal is not only to have the website as effective for the user as possible, but for the code inside to be equally efficient.</p>
+            </div>
+          </li> <!-- End HTML -->
+          <li class="list-group-item flex-container align-center"> <!-- Begin CSS -->
+            <div class="services-icons">
+              <i class="fa fa-cog deep-blue-color" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3 class="list-group-item-heading">CSS</h3>
+              <p class="list-group-item-text">CSS is what transforms a website from a bare-bones block of text to the colorful sites you see today. Efficient coding is just as important here, as is maintaining the direction of Object Oriented CSS to make as much of the code as re-usable as possible.</p>
+            </div>
+          </li> <!-- End CSS -->
+          <li class="list-group-item flex-container align-center"> <!-- begin responsive -->
+            <div class="services-icons pull-left">
+              <i class="fa fa-desktop deep-blue-color" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3 class="list-group-item-heading">Responsive design</h3>
+              <p class="list-group-item-text">With as many difference devices available to view websites as there are today, designing a website that is responsive is a must. Thanks to bootstrap, I can create mobile-first sites that can be viewed on any device.</p>
+            </div>
+          </li> <!-- End responsive -->
+          <li class="list-group-item flex-container align-center"> <!-- begin git -->
+            <div class="services-icons pull-left">
+              <i class="fa fa-git deep-blue-color" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3 class="list-group-item-heading">Git / Github</h3>
+              <p class="list-group-item-text">As good as any one coder is, collaboration is equally important in todays work place. I have experience with github and git to update and maintain projects with other coders.</p>
+            </div>
+          </li> <!-- end git -->
+        </div> <!-- End services col -->
+      </ul>
+    </div>
+
+    <!-- End Services -->
+
+    <!-- Begin about me thumbnails -->
+    <a href="" id="about-anchor" class="anchor-adjustment"></a>
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="caption-text shadow-text-lg-blu">About Me</p>
+        <div class="blue-bar"></div>
+      </div>
+    </div> <!--End caption row -->
+    <div class="row"> <!-- Begin first thumnail row -->
+      <div class="col-sm-6">
+        <div class="thumbnail"> <!-- Thumbnail 1 -->
+          <div class="embed-responsive embed-responsive-4by3 about-bowling-vid">
+            <!-- <iframe src="vid/300.mp4" class="embed-responsive-item"></iframe> -->
+          <video controls>
+            <source src="vid/300.mp4" type="video/mp4">
+              Unsupported video
+          </video>
+          </div>
+
+          <div class="caption">
+            <h3>Bowling</h3>
+            <p>The one activity for me that reinforces the adage "Practice makes perfect", going from barely being able to crack 100 my first few weeks bowling to maintaining an average over 215 for the past few years has been one of the accomplishments I am most proud of.</p>
+          </div>
+        </div> <!-- End Thumbnail 1 -->
+      </div><!-- End first thumbnail col -->
+      <div class="col-sm-6">
+        <div class="thumbnail"> <!-- Thumbnail 1 -->
+          <img src="img/hockey-540.jpg" alt="Hockey" class="img-responsive">
+          <div class="caption">
+            <h3>Hockey</h3>
+            <p>One of my favorite sports, ice hockey is not only a great workout, but it's the perfect activity to counteract the 100&#176;+ weather with a sub 40&#176; ice rink. I have enjoyed playing either roller or ice hockey for over 20 years.</p>
+          </div>
+        </div> <!--End thumbnail 2 -->
+      </div> <!-- End secon thumbnail col -->
+    </div> <!--- End first row of thumbnails -->
+    <div class="row"> <!-- Begin second thumnail row -->
+      <div class="col-sm-6">
+        <div class="thumbnail"> <!-- Thumbnail 3 -->
+          <img src="img/jrmm1.jpg" alt="mother mary's">
+          <div class="caption">
+            <h3>Mother Mary's</h3>
+            <p>From 2010 to 2017, I managed, and in the later stages owned, Mother Mary's Italian Kitchen in Clovis, CA. A family owned business, I did everything from answering phones and expediting orders to maintaining the company ledger and paying the bills, and gained a myriad of skills in the proccess.</p>
+          </div>
+        </div> <!-- End Thumbnail 3 -->
+      </div><!-- End first thumbnail col -->
+      <div class="col-sm-6">
+        <div class="thumbnail"> <!-- Thumbnail 4 -->
+          <img src="img/evo-stage-horiz.jpg" alt="evo stage" class="img-responsive thumb-pic">
+          <div class="caption">
+            <h3>Fighting Games</h3>
+            <p>My most recent hobby, while I play many different types of video games, fighting games in particular are quite special to me. After seeking out a local community that plays the same fighting games I do, I have met some of my closest friends thanks to fighting games, and try to travel and attend out of town tournaments whenever I can.</p>
+          </div>
+        </div> <!-- End Thumbnail 4 -->
+      </div><!-- End second thumbnail col -->
+    </div> <!--- End second row of thumbnails -->
+
+<!-- End about me thumbnails -->
+  </div> <!-- End container to allow container fluid for second parallax -->
+  <div class="container-fluid parallax-cont">
+<!-- Begin parallax attempt -->
+    <div class="parallax-2"></div>
+  </div> <!-- End container fluid for parallax -->
+  <div class="container">
+    <!-- Begin Contact -->
+    <a href="" id="contact-anchor" class="anchor-adjustment"></a>
+    <div class="row" id="contact-me">
+      <div class="col-sm-4">
+        <p class="caption-text shadow-text-lg-blu">Contact Me</p>
+        <div class="blue-bar"></div>
+      </div>
+    </div> <!--End caption row -->
+    <div class="row" class="contact-outer-row"> <!-- Begin Contact-me section -->
+      <div class="col-sm-6"> <!-- Begin left half of contact (Form) -->
+        <div class="form-outer-cont deep-blue-bg grey-box-shadow"> <!-- Begin blue frame for contact-form -->
+          <div class="row flex-container justify-center"> <!-- Begin flex container for form -->
+            <div class="col-xs-10 form-container light-blue-bg grey-box-shadow"> <!-- Begin form colum .form-container -->
+              <h4>Use this form to send me a simple message via e-mail.</h4>
+              <form class="contact-form" id="emailForm" method="POST">
+                <div class="form-group">
+                  <label for="name">Full Name:</label>
+                  <input type="text"
+                         class="form-control"
+                         id="name"
+                         name="name"
+                         required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address:</label>
+                  <input type="text"
+                         class="form-control"
+                         id="email"
+                         name="_replyto"
+                         required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="text"
+                         class="form-control"
+                         id="phone"
+                         name="phone">
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message:</label>
+                  <textarea type="text"
+                            class="form-control"
+                            id="message"
+                            name="message"
+                            maxlength="200"
+                            required>
+                  </textarea>
+                  <p id="maxCharacters"></p>
+                  <input type="hidden"
+                         name="_subject"
+                         value="Website contact" />
+                  <input type="hidden"
+                         name="_gotcha"/>
+                </div>
+                <button class="btn btn-sm btn-primary"
+                        type="submit"
+                        id="submitButton">
+                    Submit
+                </button>
+              </form>
+            </div> <!-- end form column .form-container -->
+          </div> <!-- End flex container for form -->
+        </div> <!-- End blue frame for contact form -->
+      </div> <!-- End left half of contact section -->
+      <div class="col-sm-6"> <!--- Begin right half of contact section -->
+
+        <a href="mailto:fleury14@comcast.net">
+          <div class="row contact-row grey-box-shadow"> <!-- Begin email -->
+            <div class="col-xs-2 contact-flex flex-container align-center justify-center">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-9">
+              <h4>E-mail</h4>
+              <p>If you'd like to send a more detailed message using your e-mail client, click here.</p>
+            </div>
+          </div> <!-- end email -->
+        </a>
+        <a href="http://www.github.com/fleury14" target="_blank">
+          <div class="row contact-row grey-box-shadow"> <!-- begin github -->
+            <div class="col-xs-2 contact-flex flex-container align-center justify-center">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-9">
+              <h4>Github</h4>
+              <p>Check out my repositories and see the work I've put in.</p>
+            </div>
+          </div> <!-- end github -->
+        </a>
+        <a href="http://www.twitter.com/LQFleury14" target="_blank">
+          <div class="row contact-row grey-box-shadow"> <!-- begin twitter -->
+            <div class="col-xs-2 contact-flex flex-container align-center justify-center">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-9">
+              <h4>Twitter</h4>
+              <p>Or send me a tweet and let's initiate contact.</p>
+            </div>
+          </div> <!-- end twitter -->
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=1822326619" target="_blank">
+          <div class="row contact-row grey-box-shadow"> <!-- begin facebook -->
+            <div class="col-xs-2 contact-flex flex-container align-center justify-center">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-9">
+              <h4>Facebook</h4>
+              <p>Finally, check out my facebook page if you want to see more of my interests.</p>
+            </div>
+          </div> <!-- end facebook -->
+        </a>
+      </div> <!-- right half of contact -->
+    </div> <!-- end contact row -->
+
+    <!-- End contact -->
+
+  </div> <!--End main container -->
+  <footer>
+    <div class="container-fluid footer-cont"> <!-- begin footer container -->
+      <div class="row">
+        <div class="col-sm-5 footie-col flex-container justify-center align-center deep-blue-bg text-center"> <!-- Copyright text -->
+          <p>&copy;2017, Leonard Ruggiero jr. All Rights Reserved.</p>
+        </div>
+        <div class="col-sm-2 footie-col flex-container justify-center align-center deep-blue-bg hidden-xs"> <!-- Divider bar -->
+          <div class="vert-bar light-blue-bg"></div>
+        </div>
+        <div class="col-sm-5 deep-blue-bg icon-flex flex-container align-center">
+          <div class="footer-icon-cont flex-container align-center"> <!-- icon container -->
+            <div class="footer-icon-box">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <div class="footer-shine"></div>
+            </div>
+            <p>TWITTER</p>
+          </div> <!-- end icon container -->
+          <div class="footer-icon-cont flex-container align-center"> <!-- icon container -->
+            <div class="footer-icon-box">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <div class="footer-shine"></div>
+            </div>
+            <p>FACEBOOK</p>
+          </div> <!-- end icon container -->
+          <div class="footer-icon-cont flex-container align-center"> <!-- icon container -->
+            <div class="footer-icon-box">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <div class="footer-shine"></div>
+            </div>
+            <p>GITHUB</p>
+          </div> <!-- end icon container -->
+          <div class="footer-icon-cont flex-container align-center"> <!-- icon container -->
+            <div class="footer-icon-box">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <div class="footer-shine"></div>
+            </div>
+            <p>E-MAIL</p>
+          </div> <!-- end icon container -->
+        </div> <!-- social icons col -->
+      </div> <!--- end footer row -->
+
+
+    </div> <!-- end footer container-fluid -->
+  </footer>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101143031-3', 'auto');
+  ga('send', 'pageview');
+
+  </script>
 </body>
 </html>

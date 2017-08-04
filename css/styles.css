@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway');
+
+
+/*Color pallette: 004ba8 - Deep blue
+d6e9ff - lighter shade */
+
+/* Z-index notes:
+
+carousel-controles: 15
+affix (nav): 20 */
+
+/* Begin Global Style */
+
+body {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+
+
+.anchor-adjustment {
+  display: block;
+  padding-top: 55px;
+  margin-top: -55px;
+} /* Used anchor tags just before the section to account for the fixed navbar on top when skipping to parts of the page */
+
+.deep-blue-color {
+  color: #004ba8
+}
+
+.deep-blue-bg {
+  background-color: #004ba8;
+}
+
+.light-blue-bg {
+  background-color: #d6e9ff;
+}
+
+.shadow-text-sm {
+  text-shadow: 2px 2px 2px #bebebe;
+}
+
+.shadow-text-lg {
+  text-shadow: 4px 4px 8px #bebebe;
+}
+
+.shadow-text-lg-blu {
+  text-shadow: 4px 4px 8px #004ba8;
+}
+
+.grey-box-shadow {
+  box-shadow: 3px 3px #bebebe;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/*Begin header styles*/
+
+.intro-button {
+  color: #fff;
+}
+
+.header-box {
+  color: #fff;
+}
+
+.htop {
+  height: 132px;
+  align-items: flex-end;
+}
+
+.hmid {
+  height: 50px;
+}
+
+.hbtm {
+  height: 100px;
+  align-items: flex-start;
+}
+
+.header-box h1 {
+  font-size: 48px;
+  margin-top: 86px;
+}
+
+/*End header styles*/
+
+/*Begin Navbar styles*/
+
+
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.affix + .main-container {
+  padding-top: 52px;
+}
+
+.navbar-default .navbar-brand {
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+  font-size: 24px;
+}
+
+.navbar-default .navbar-brand:hover {
+  font-family: "Permanent Marker", cursive;
+  color: #d6e9ff;
+  font-size: 24px;
+}
+
+
+.clear-fix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+ }
+
+.navbar-default {
+  border: none;
+}
+
+
+.navbar-default .navbar-nav>.active>a {
+  background-color: #d6e9ff;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: #d6e9ff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  transition: 0.3s all;
+  box-shadow: -3px -3px 3px #bbb;
+  position: relative;
+  margin-left: 20px;
+  border: 1px solid #fff;
+  margin-bottom: 3px;
+}
+
+.navbar-default .navbar-nav>li>a:active {
+  bottom: 3px;
+  right: 3px;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+  color: #fff;
+}
+
+.dropdown-menu>li>a:hover {
+  background-color: #004ba8;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #d6e9ff;
+  transition: 0.3s all;
+  animation-name: button-wobble;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes button-wobble {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+  }
+}
+
+
+
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: #d6e9ff;
+}
+
+.nav-button:hover {
+  background-color: #d6e9ff;
+}
+
+
+.navbar-default {
+  color: #fff;
+}
+
+/* Hamburger (yum) menu styles */
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  color: #d6e9ff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* Media query to change the animation on hamburger menu to something more visually appealing */
+@media only screen and (max-width: 768px) {
+
+  .navbar-default .navbar-nav>li>a:hover {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes button-wobble {
+    0% {
+      background-color: #004ba8;
+      color: #fff;
+    }
+    25% {
+      background-color: #d6e9ff;
+      color: #000;
+    }
+    50% {
+      background-color: #fff;
+      color: #000;
+    }
+    75% {
+      background-color: #d6e9ff;
+      color: #000;
+    }
+    100% {
+      background-color: #004ba8;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+      color: #fff;
+    }
+
+}
+
+/*End Navbar styles*/
+
+/* Begin Jumbotron Styles */
+
+
+.jumbotron {
+  background-image: url(../img/jumbotron-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+}
+
+.jumbo-head {
+  font-family: "Permanent Marker", cursive;
+  font-size: 48px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbo-head {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+
+
+/* End Jumbotron Styles */
+
+/* Begin Well styles */
+
+.well-lg > img {
+  height: 75px;
+  margin-right: 25px;
+}
+
+/* Begin Carousel Styles */
+
+
+.caro-frame {
+  padding: 5px 40px 40px 40px;
+  color: #fff;
+  height: 100%;
+}
+
+.item a:hover {
+  text-decoration: none;
+}
+
+.caro-img {
+  border: 5px solid #000;
+}
+
+.carousel-caption p {
+  color: #fff;
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+}
+
+.item {
+  height: 512px;
+}
+
+
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+  color: #004ba8;
+}
+
+/* Media query to make the chrevrons white on smaller displays where the chevrons tend to rest in the frame */
+@media only screen and (max-width: 768px) {
+  .glyphicon-chevron-right, .glyphicon-chevron-left {
+    color: #fff;
+  }
+}
+
+/* Media query to move indicators down on larger screens */
+
+@media screen and (min-width: 768px){
+
+  .carousel-indicators {
+    bottom: 0px;
+  }
+}
+/* Readjusting height on certain display widths to make the frame look better */
+
+@media only screen and (max-width: 768px){
+  .caro-frame, .carousel-inner {
+    height: 550px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .caro-frame, .carousel-inner {
+    height: 630px;
+  }
+} /*Adjust height on carousel in lg view to make sure the frame shows on the bottom *
+
+
+/* End Carousel Styles  */
+
+/*Begin Services Styles */
+
+
+.serv-question {
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+.services-icons {
+  font-size: 48px;
+  padding-right: 30px;
+  height: 100%;
+  width: 71px;
+  transition: 1s all;
+}
+
+.services-icons:hover {
+  -webkit-transform: rotatey(360deg);
+  transform: rotatey(360deg);
+  transform-origin: 20% 50%;
+}
+
+.list-group-item h3 {
+  text-shadow: 1px 1px 2px #bebebe;
+}
+
+/*End Services Styles */
+
+/*Begin Thumbnail Styles */
+
+.caption-text {
+  font-size: 48px;
+  margin-top: 25px;
+}
+
+.blue-bar {
+  height: 5px;
+  width: 100%;
+  background-color: #004ba8;
+  margin-bottom: 25px;
+}
+
+
+.thumbnail {
+  box-shadow: 5px 5px 5px #bebebe;
+}
+
+.about-bowling-vid {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*End Thumbnail Styles */
+
+/* Parallax styles */
+
+.parallax-cont {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.parallax {
+  min-height: 540px;
+  background-image: url('../img/geekwise-2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
+  background-image: url('../img/mum-cast.jpg');
+  min-height: 540px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .parallax, .parallax-2 {
+    height: 300px;
+    min-height: 0;
+  }
+}
+
+
+/* Begin contact styles */
+
+.contact-flex > .fa {
+  color: #004ba8;
+  font-size: 48px;
+  transition: 1s all;
+}
+
+.form-outer-cont {
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+}
+
+/* Begin Pasted contact styles from formspree form */
+
+
+
+.form-container {
+  padding: 20px;
+}
+
+.form-container h4 {
+  margin-top: 0px;
+}
+
+.contact-form textarea {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.danger {
+  border-color: #f00;
+}
+
+/* End pasted contact styles */
+
+.contact-row {
+  border: 1px solid #bebebe;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  color: #000;
+}
+
+.contact-row:active {
+  top: 3px;
+  left: 3px;
+  box-shadow: none;
+}
+
+.contact-flex {
+  height: 100%;
+  border-right: 2px groove #bebebe;
+  min-height: 100px;
+}
+
+.contact-flex:hover .fa {
+  color: #82a1c7;
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg);
+}
+
+
+/* Begin Footer Styles */
+
+footer {
+  color: #fff;
+
+}
+
+.footer-cont {
+  height: 150px;
+
+}
+
+.footie-col {
+  height: 150px;
+}
+
+.vert-bar {
+  height: 75px;
+  width: 2px;
+  transform: rotate(45deg);
+}
+
+.icon-flex {
+  height: 150px;
+  justify-content: space-around;
+}
+
+.footer-icon-cont {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.footer-icon-box {
+  border: 2px solid #fff;
+  border-radius: 5%;
+  height: 50px;
+  width: 50px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 0px #888888;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-icon-box:active {
+  box-shadow: none;
+  left: 3px;
+  top: 3px;
+}
+
+.footer-shine {
+
+  position: absolute;
+  top: 0;
+  left: -70px;
+  height: 50px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all .3s linear;
+  transform: skewX(20deg) translateX(0);
+}
+
+.footer-icon-box:hover .footer-shine {
+  transform: skewX(20deg) translateX(200px);
+}
+
+
+
+/*Media Queries*/
