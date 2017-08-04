@@ -28,11 +28,15 @@ body {
 /* Cursor blinking effect */
 
 @-webkit-keyframes cursor-blink {
+  0% {border-right: 0px;}
   50% {border-right: 10px solid #32ff32;}
+  100% {border-right: 0px;}
 }
 
 @keyframes cursor-blink {
+  0% {border-right: 0px;}
   50% {border-right: 10px solid #32ff32;}
+  100% {border-right: 0px;}
 }
 
 /* Notes: 7.79 px was the cacluated width of the monospace font.
