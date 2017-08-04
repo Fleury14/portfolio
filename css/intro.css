@@ -2,15 +2,15 @@
 
 /*DOS FONT: Ask for permission, but this is as close as it gets*/
 
-/*@font-face {
+@font-face {
     font-family: "DOS";
     src: url(../fonts/LessPerfectDOSVGA.ttf) format("truetype");
-}*/
+}
 
 body {
   background-color: #000;
   color: #32ff32;
-  font-family: monospace;
+  font-family: "DOS", monospace;
   font-size: 14px;
 }
 
@@ -21,7 +21,7 @@ body {
   height: 16px;
   width: 0px;
   overflow: hidden;
-
+  
   white-space: nowrap;
 }
 
@@ -40,7 +40,7 @@ Lines 4 & 5 have a delay to simulate someone typeing */
 }
 
 @keyframes typing-1 {
-  100% {width: calc(7.79px*37);}
+  100% {width: calc(7px*37);}
 }
 
 .line-2 {
@@ -48,7 +48,7 @@ Lines 4 & 5 have a delay to simulate someone typeing */
 }
 
 @keyframes typing-2 {
-  100% {width: calc(7.79px*52);}
+  100% {width: calc(7px*52);}
 }
 
 .line-3 {
@@ -56,7 +56,7 @@ Lines 4 & 5 have a delay to simulate someone typeing */
 }
 
 @keyframes typing-3 {
-  100% {width: calc(7.79px*46);}
+  100% {width: calc(7px*46);}
 }
 
 .line-4 {
@@ -66,12 +66,12 @@ Lines 4 & 5 have a delay to simulate someone typeing */
 
 
 @keyframes typing-4 {
-  100% {width: calc(7.79px*5);}
+  100% {width: calc(7px*5);}
 }
 
 @keyframes typing-4-input {
-  from {width: calc(7.79px*5);}
-  to {width: calc(7.79px*19);}
+  from {width: calc(7px*5);}
+  to {width: calc(7px*19);}
 }
 
 .line-5 {
@@ -79,12 +79,12 @@ Lines 4 & 5 have a delay to simulate someone typeing */
 }
 
 @keyframes typing-5 {
-  100% {width: calc(7.79px*15.7);}
+  100% {width: calc(7px*15.7);}
 }
 
 @keyframes typing-5-input {
-  from {width: calc(7.79px*16);}
-  to {width: calc(7.79px*51);}
+  from {width: calc(7px*16);}
+  to {width: calc(7px*51);}
 }
 
 .line-6 {
@@ -92,7 +92,7 @@ Lines 4 & 5 have a delay to simulate someone typeing */
 }
 
 @keyframes typing-6 {
-  100% {width: calc(7.79px*11);}
+  100% {width: calc(7px*11);}
 }
 
 .end-button {
