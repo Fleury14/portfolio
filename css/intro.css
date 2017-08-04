@@ -27,6 +27,10 @@ body {
 
 /* Cursor blinking effect */
 
+@-webkit-keyframes cursor-blink {
+  50% {border-right: 10px solid #32ff32;}
+}
+
 @keyframes cursor-blink {
   50% {border-right: 10px solid #32ff32;}
 }
