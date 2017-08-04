@@ -1,5 +1,12 @@
 /* Set black screen, green font */
 
+/*DOS FONT: Ask for permission, but this is as close as it gets*/
+
+/*@font-face {
+    font-family: "DOS";
+    src: url(../fonts/LessPerfectDOSVGA.ttf) format("truetype");
+}*/
+
 body {
   background-color: #000;
   color: #32ff32;
@@ -94,6 +101,8 @@ Lines 4 & 5 have a delay to simulate someone typeing */
   position: absolute;
   top: 150%;
   left: 50%;
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Safari */
   transform: translate(-50%, -50%);
   border: 1px double #32ff32;
   padding: 10px;
