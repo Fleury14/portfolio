@@ -21,7 +21,7 @@ body {
   height: 16px;
   width: 0px;
   overflow: hidden;
-  
+
   white-space: nowrap;
 }
 
@@ -120,7 +120,7 @@ Lines 4 & 5 have a delay to simulate someone typeing */
   color: #32ff32;
   position: absolute;
   right: 10px;
-  bottom: 10px;
+  bottom: -40px;
   border: 1px solid #32ff32;
   border-radius: 5%;
   padding: 5px;
