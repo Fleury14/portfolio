@@ -96,12 +96,16 @@ body {
 
 /*Begin Navbar styles*/
 
-
-
 .affix {
-  top: 0;
+  top: 0px;
   width: 100%;
   z-index: 20;
+}
+
+.affix:after {
+  content: " ";
+  display: block;
+  border-bottom: 3px solid #000;
 }
 
 .affix + .main-container {
@@ -120,7 +124,6 @@ body {
   font-size: 24px;
 }
 
-
 .clear-fix:after {
    content: " "; /* Older browser do not support empty content */
    visibility: hidden;
@@ -132,7 +135,6 @@ body {
 .navbar-default {
   border: none;
 }
-
 
 .navbar-default .navbar-nav>.active>a {
   background-color: #d6e9ff;
@@ -197,8 +199,6 @@ body {
   }
 }
 
-
-
 .navbar-default .navbar-nav>.open>a:focus {
   background-color: #d6e9ff;
 }
@@ -206,7 +206,6 @@ body {
 .nav-button:hover {
   background-color: #d6e9ff;
 }
-
 
 .navbar-default {
   color: #fff;
@@ -286,8 +285,6 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-
-
 
 /* End Jumbotron Styles */
 
