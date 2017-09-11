@@ -58,6 +58,8 @@ $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
+  // Remove carousel ids (I think)
+  .not('[href="carousel-example-generic"]')
   .click(function(event) {
     // On-page links
     if (
