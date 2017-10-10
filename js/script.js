@@ -112,7 +112,7 @@ $('a[href*="#"]')
     html: 'HTML is the foundation on which websites are built. My goal is not only to have the website as effective for the user as possible, but for the code inside to be equally efficient.',
     css: 'CSS is what transforms a website from a bare-bones block of text to the colorful sites you see today. Efficient coding is just as important here, as is maintaining the direction of Object Oriented CSS to make as much of the code as re-usable as possible.',
     responsive: 'With as many difference devices available to view websites as there are today, designing a website that is responsive is a must. Thanks to bootstrap, I can create mobile-first sites that can be viewed on any device.',
-    js: 'JavaScript is what allows websites to be taken to the next level with plenty of interactivity between the user and the website.',
+    js: `JavaScript is what allows websites to be taken to the next level with plenty of interactivity between the user and the website. Learning JavaScript was probabaly the most fun I had in any course because I was able to utilize my skills from learning BASIC when I was a child. Check out the Word Fight, and Adventure Game pages, as they are games written entirely in JavaScript.`,
     git: 'As good as any one coder is, collaboration is equally important in todays work place. I have experience with github and git to update and maintain projects with other coders.',
     ang2: 'Angular2 is a JS framework where everything comes together. It transforms a project from a simple website to a full-scale web application, utilizing TypeScript instead of JavaScript.'
   }
