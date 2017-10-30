@@ -364,6 +364,34 @@ body {
 
 /*Begin Services Styles */
 
+.skills-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 1s all;
+  color: #004ba8;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.skills-container:hover {
+  background-color: #a2c1e7;
+  color: #eee;
+} 
+
+.skills-container-active {
+  background-color: #82a1c7;
+  color: #fff;
+}
+
+.skill-result {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.skills-container h3 {
+  margin-top: 5px;
+}
 
 .serv-question {
   padding-left: 15px;
