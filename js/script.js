@@ -114,7 +114,7 @@ $('a[href*="#"]')
     responsive: 'With as many difference devices available to view websites as there are today, designing a website that is responsive is a must. Thanks to bootstrap, I can create mobile-first sites that can be viewed on any device.',
     js: `JavaScript is what allows websites to be taken to the next level with plenty of interactivity between the user and the website. Learning JavaScript was probabaly the most fun I had in any course because I was able to utilize my skills from learning BASIC when I was a child. Check out the Word Fight, and Adventure Game pages, as they are games written entirely in JavaScript.`,
     git: 'As good as any one coder is, collaboration is equally important in todays work place. I have experience with github and git to update and maintain projects with other coders.',
-    ang2: 'Angular2 is a JS framework where everything comes together. It transforms a project from a simple website to a full-scale web application, utilizing TypeScript in addition to JavaScript.'
+    ang2: 'Angular2 is a JS framework where everything comes together. It transforms a project from a simple website to a full-scale web application, utilizing TypeScript in addition to JavaScript. Check out the Fresno Gaming Community ladder as it is built with the Angular2 CLI and utilizes the Realtime Database feature of Firebase to write and delete information. The Room Reservation app does this as well.'
   }
 
   //add listeners and their respective functions.
