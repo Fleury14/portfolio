@@ -480,7 +480,7 @@ body {
 
 /* Begin contact styles */
 
-.contact-flex > .fa {
+.contact-flex > .fa, .contact-flex > .fab {
   color: #004ba8;
   font-size: 48px;
   transition: 1s all;
